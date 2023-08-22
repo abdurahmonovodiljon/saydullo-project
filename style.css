@@ -1,57 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-  font-family: "Manrope";
+body {
+    font-family: "Manrope";
 }
 
-header{
-  background-image: url(./image/header-image.png);
-  padding-top: 462px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
+.container {
+    font-family: "Manrope";
 }
 
-.font-w-600{
- font-weight: 600;
+header {
+    background-image: url(./image/header-image.png);
+    padding-top: 462px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
-.opasite{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(15, 23, 40, 0.9) 100%);
+.font-w-600 {
+    font-weight: 600;
 }
 
-.hover{
-  transition: 0.7s;
+.text-capitalize {
+    text-transform: capitalize;
 }
 
-.hover:hover{
-  background-color: blue;
-  color: #fff;
-  transition: 0.7s;
+.font-w-700 {
+    font-weight: 700;
 }
 
-.font-size{
-  font-size: 14px;
+.opasity {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(15, 23, 40, 0.9) 100%);
 }
 
-.font-size-16{
-  font-size: 16px;
+.hover {
+    transition: 0.3s;
 }
 
-.hover-1:hover{
-  color: blue;
+.max-w-750 {
+    max-width: 750px;
 }
 
-@media screen and (max-width:768px) {
-  .column{
+.pointer {
+    cursor: pointer;
+}
+
+.btn-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    display: none;
+}
+
+.max-w-300{
+    max-width: 300px;
+}
+
+.max-w-301{
+    max-width: 301px;
+}
+
+.max-w-1063{
+    max-width: 1063px;
+}
+
+.max-w-802{
+    max-width: 802px;
+}
+
+.max-w-552{
+    max-width: 552px;
+}
+
+.bg{
+    background: var(--charcoal-grey-shades-charcoal-grey-900, #0F1728);
+}
+
+.max-w-800 {
+    max-width: 800px;
+}
+
+.hover:hover .btn-1 {
     display: flex;
-    flex-direction: column;
-  }
+}
+
+.hover:hover .font-size-16 {
+    color: #FFFFFF;
+}
+
+.hover-1:hover {
+    color: blue;
+}
+
+.hover:hover {
+    background-color: blue;
+    color: #FFFFFF;
+}
+
+.font-size {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+@media screen and (max-width:425px) {
+    .responsive-text-p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
 }
